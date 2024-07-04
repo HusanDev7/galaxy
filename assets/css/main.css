@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/death-star");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -82,8 +83,8 @@ body {
 
 .astranaud {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 54%;
+    left: 54%;
     transform: translate(-50%, -50%);
 }
 
@@ -95,18 +96,22 @@ body {
     0% {
         transform: translateY(-10px) translateX(-50%);
     }
+
     50% {
         transform: translateY(0) translateX(-50%);
     }
+
     100% {
         transform: translateY(10px) translateX(-50%);
     }
 }
+
 .socil-media {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
+
 .socil-media img {
     width: 47px;
     height: 45px;
@@ -114,8 +119,12 @@ body {
 }
 
 .continue {
+    position: fixed;
+    bottom: 219px;
     display: flex;
     justify-content: space-between;
+    left: 101px;
+    right: 101px;
     align-items: center;
 }
 
@@ -143,4 +152,37 @@ body {
     line-height: 102%;
     text-align: center;
     color: #ceb7ff;
+}
+
+#slide-1 {
+    display: none;
+}
+
+#slide-1.active {
+    display: block;
+}
+
+.about {
+    position: fixed;
+    top: 65%;
+    left: 30%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ceb7ff;
+    width: 833px;
+    height: 317px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    width: 725px;
+    height: 160px;
 }
